@@ -36,6 +36,7 @@ async def get_bytes_from_file(file):
     return array_buf.to_bytes()
 
 def main():
+    # load the main UI elements
     load_ui()
 
 if __name__ == "__main__":
