@@ -10,6 +10,7 @@ def load_ui():
     ui_button = r'<button py-click="translate_english">Translate</button>'
     ui_output = r'<textarea id="output"></textarea>'
     div_container.insertAdjacentHTML("afterbegin", ui_input + ui_button + ui_output)
+    root_container.innerHTML = ""
     root_container.append(div_container)
 
 def translate_english(event):
